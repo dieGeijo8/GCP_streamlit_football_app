@@ -1,0 +1,2 @@
+docker build -t gcp-streamlit-app .
+docker run -d -p 8080:8080 --name gcp-streamlit-app-container gcp-streamlit-app
