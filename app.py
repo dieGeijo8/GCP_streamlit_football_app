@@ -17,7 +17,24 @@ def run_query(query):
     rows = [dict(row) for row in rows_raw]
     return rows
 
-rows = run_query("SELECT * FROM `gcpstreamlitfootball.InjuriesDB.Injuries_SerieA` LIMIT 15")
+rows = run_query('''
+SELECT 
+  COALESCE(t2.Team_name, 'National team'),
+  t3.Player_name,
+  Injury, 
+  Start_date,
+  End_date,
+  Games_missed
+FROM 
+  `gcpstreamlitfootball.InjuriesDB.injuries_complete` t1
+LEFT JOIN 
+  `gcpstreamlitfootball.InjuriesDB.Teams_SerieA` t2 
+ON 
+  t1.Team_ID = t2.Team_ID 
+LEFT JOIN 
+  `gcpstreamlitfootball.InjuriesDB.Players_SerieA` t3 
+ON 
+  t1.Player_ID = t3.Player_ID''')
 
 st.header('Injuries table')
 
