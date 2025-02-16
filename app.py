@@ -5,7 +5,7 @@ from google.cloud import bigquery
 import plotly.express as px
 
 # BigQuery API client.
-credentials = service_account.Credentials.from_service_account_file("gcpstreamlitfootball-b7e5d69a75b6.json")
+credentials = service_account.Credentials.from_service_account_file("")
 client = bigquery.Client(credentials=credentials)
 
 # Function to the get and cache the data
