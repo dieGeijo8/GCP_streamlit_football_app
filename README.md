@@ -6,18 +6,20 @@ The application retrieves data from a **BigQuery** database and presents interac
 
 You can access the application at [Streamlit](https://gcpstreamlitfootball-711519321063.europe-southwest1.run.app/). The application will be taken down at some moment so you may not be able to see it anymore.
 
+---
+
 ### **Pre-requisites**
 
 Before you can run this project, ensure the following requirements are met:
 
-1. Successfully set up Python and Docker to test the containerized Streamlit application locally.
-2. Build the Dokcer Image.
-3. Have a Google Cloud account.
-4. Install the Google Cloud CLI.
+1. Successfully set up **Python** and **Docker** to test the containerized Streamlit application locally.
+2. Build the **Docker Image**.
+3. Have a **Google Cloud account**.
+4. Install the **Google Cloud CLI**.
 5. Create a Google Cloud Project and enable the following APIs:
-   - BigQuery API
-   - Artifact Registry API
-   - Cloud Run Admin API
+   - **BigQuery API**
+   - **Artifact Registry API**
+   - **Cloud Run Admin API**
 6. In the **IAM & Admin > IAM** section of your project, create a user with the required permissions for BigQuery and Artifact Registry. 
 Generate a key for the role and place the key file directory in the code.
 
