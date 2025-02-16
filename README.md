@@ -2,8 +2,9 @@
 
 This project involves deploying a Docker-containerized Streamlit application on **Cloud Run**.  
 
-The application retrieves data from a **BigQuery** database and presents interactive visualizations. The overall structure is kept simple, as the primary goal is to test **BigQuery** and **Cloud Run** services on **Google Cloud Platform (GCP)**.  
+The application retrieves data from a **BigQuery** database and presents interactive visualizations. The overall application structure is kept simple, as the primary goal is to test **BigQuery** and **Cloud Run** services on **Google Cloud Platform (GCP)**.  
 
+You can access the application at [Streamlit](https://gcpstreamlitfootball-711519321063.europe-southwest1.run.app/). The application will be taken down at some moment so you may not be able to see it anymore.
 
 ### **Pre-requisites**
 
@@ -18,7 +19,7 @@ Before you can run this project, ensure the following requirements are met:
    - Artifact Registry API
    - Cloud Run Admin API
 6. In the **IAM & Admin > IAM** section of your project, create a user with the required permissions for BigQuery and Artifact Registry. 
-Generate a key for the role and place the key file in this directory.
+Generate a key for the role and place the key file directory in the code.
 
 ---
 
